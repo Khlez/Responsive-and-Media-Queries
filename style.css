@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.text {
+  flex-basis: 400px;
+  flex-shrink: 1;
+  transform: translate(50px);
+  margin-right: 150px;
+}
+
+.text h2 {
+  font-size: 2.5em;
+  color: white;
+  font-weight: 700;
+}
+
+.text p {
+  color: white;
+  font-size: 0.945em;
+  padding-block: 1em;
+}
+
+.seven {
+  background: hsl(248, 32%, 49%);
+  text-align: center;
+  padding-block: 0.7em;
+  border-radius: 10px;
+  width: 470px;
+  color: white;
+  transform: translateY(-80px);
+  transform: translateX(25px);
+  position: relative;
+  top: -25px;
+  font-weight: 700;
+  box-shadow: 2px 2px 4px hsl(249, 10%, 26%);
+}
+
+span {
+  color: rgb(198, 202, 204);
+}
+
+.form {
+  position: relative;
+  top: -10px;
+  right: 50px;
+  background-color: white;
+  padding-block: 2em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px hsl(249, 10%, 26%);
+  margin-left: 80px;
+}
+
+.form input {
+  width: 400px;
+  height: 45px;
+  margin-block: 0.5em;
+  margin-inline: 1.8em;
+  border: 2px solid rgb(224, 221, 221);
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.form input[value="Jonathan"] {
+  padding-inline: 1.5em;
+}
+
+.form input::placeholder {
+  padding-inline: 1.5em;
+}
+
+.form input[type="button"] {
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  margin-block: 0.5em;
+}
+
+.form .click {
+  font-size: 10px;
+  color: hsl(246, 25%, 77%);
+  transform: translateX(55px);
+}
+
+.click span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+  text-shadow: 2px 2px 4px;
+
+}
+
+/* I set the responsiveness using 375px! please put this into consideration */
+
+@media screen and (orientation:portrait) {
+  * {
+    width: 100vw;
+  }
+
+  .text {
+    text-align: center;
+    flex-wrap: wrap;
+    position: relative;
+    left: 25px;
+    top: 40px;
+  }
+
+  .text h2 {
+    font-size: 2em;
+   padding-inline: 0.8em;
+  }
+
+  .text p {
+    
+    font-size: 1em;
+    padding-inline: 2em;
+  }
+
+  .seven {
+    position: relative;
+    top: -10px;
+    width: 340px;
+    left: -10px;
+    padding-inline: 3em;
+    padding-block: 1.5em;
+    box-shadow: 2px 2px 5px hsl(249, 10%, 26%);
+  }
+
+  .form {
+       width: 345px;
+      /*height: 420px ;*/
+      position: relative;
+      top: 10px;
+      left: -65px;
+      padding-bottom: 2em ;
+
+  }
+
+  .form input {
+    width: 295px;
+    height: 60px;
+    margin-bottom: 0.8em;
+    margin-left: 1.3em;
+    
+  }
+.form .click  {
+  text-align: center;
+  font-size: 0.8em;
+  padding-block: 0.5em;
+  padding-inline: 2.5em;
+  position: relative;
+  left: -80px;
+}
+
+  }
